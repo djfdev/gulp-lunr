@@ -12,16 +12,7 @@ var lunr = require('gulp-lunr');
 
 gulp.task('lunr', function() {
   return gulp.src('docs/*')
-    .pipe(lunr('index.json', function(file) {
-      var contents = file.contents.toString().split('\n');
-      return {
-        fields: {
-          title: { value: contents[0], boost: 10 },
-          body: { value: contents.slice(1).join('\n'), boost: 0 }
-        },
-        ref: { type: 'href', value: file.relative }
-      }
-    }))
+    .pipe(lunr('index.json'))
     .pipe(gulp.dest('./'));
 });
 ```
