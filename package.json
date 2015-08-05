@@ -1,0 +1,23 @@
+{
+  "name": "gulp-lunr",
+  "version": "0.1.0",
+  "description": "create a lunr.js index of HTML and markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Daniel Fried",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.6",
+    "lunr": "^0.5.11",
+    "through": "^2.3.8"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.1",
+    "gulp": "^3.9.0",
+    "mocha": "^2.2.5",
+    "stream-assert": "^2.0.3",
+    "vinyl": "^0.5.1"
+  }
+}
