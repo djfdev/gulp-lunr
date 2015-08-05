@@ -2,7 +2,7 @@
 
 create a [lunr.js](http://lunrjs.com/) index from vinyl file streams using gulp
 
->**Note:** this plugin is still udner development.
+>**Note:** this plugin is still under development.
 
 ## Example gulpfile
 
