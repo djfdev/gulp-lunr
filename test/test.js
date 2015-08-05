@@ -1,5 +1,4 @@
 var assert = require('assert');
-var es = require('event-stream');
 var gulp = require('gulp');
 var File = require('vinyl');
 var lunr = require('../');

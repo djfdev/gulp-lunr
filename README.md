@@ -2,6 +2,8 @@
 
 create a [lunr.js](http://lunrjs.com/) index from vinyl file streams using gulp
 
+>**Note:** this plugin is still udner development.
+
 ## Example gulpfile
 
 ```js
@@ -23,13 +25,3 @@ gulp.task('lunr', function() {
     .pipe(gulp.dest('./'));
 });
 ```
-
-## API
-
-### `lunr(targetFile, constructor)`
-
-`targetFile`: the name of the file you'd like to write you index to. Throws a warning when no file is provided.  
-
-`constructor`: defines both the configuration of the lunr.js index object, as well as the values to be used for each field when a new document is added. Takes a file as an argument. Returned object must contain at least 1 field and a `ref` to uniquely identify each object.
-
-(this repo is a WIP)
