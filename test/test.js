@@ -1,6 +1,5 @@
 var assert = require('assert');
 var gulp = require('gulp');
-var File = require('vinyl');
 var lunr = require('../');
 
 describe('gulp-lunr', function() {
